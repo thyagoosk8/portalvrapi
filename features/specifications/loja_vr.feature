@@ -1,9 +1,10 @@
 
+#language:pt
+
+Feature: Validar de tipo establishment da API
 
 
-Feature: Validação de tipo establishment
-
-  Scenario: Validar JSON response contem typeOfEstablishment
-    When I make a request to the API
-    Then the response should contain the key "typeOfEstablishment"
-    And I should print a random type of establishment
+Cenario: Validação de tipo de estabelecimento
+Dado que realize uma request na API de estabelecimentos
+Então deve encontrar a chave "typeOfEstablishment" no JSON retornado
+E printar o tipo de estabelecimento
